@@ -40,5 +40,21 @@ navbarUlElement.classList.add("navbar-list")
 
 
 let headerId = document.getElementById("header_id");
+var headerTextArry = ["I am a software developer and javaScript, C++ developer","../img/20220622_191339.jpg"];
 
+for(let i = 0; i<headerTextArry.length;i++){
+    var headerLIEelement = document.createElement("li");
+    
+}
+
+let headerh2Element = document.createElement("h2");
+let headerImgElement = document.createElement("img");
+
+headerh2Element.textContent = headerTextArry[0];
+headerImgElement.setAttribute("src",headerTextArry[1])
+
+headerLIEelement.appendChild(headerh2Element)
+headerLIEelement.appendChild(headerImgElement)
+
+headerId.appendChild(headerLIEelement);
 
