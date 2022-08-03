@@ -40,7 +40,7 @@ navbarUlElement.classList.add("navbar-list")
 
 
 let headerId = document.getElementById("header_id");
-var headerTextArry = ["My name is Samandar. I am a software developer and javaScript, C++ developer","../img/20220622_191339.jpg"];
+var headerTextArry = ["My name is Samandar. I am a software developer and javaScript,  C++  developer","../img/20220622_191339.jpg"];
 
 
 

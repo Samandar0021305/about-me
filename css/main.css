@@ -37,7 +37,16 @@ body{
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
+    padding: 40px 0;
 }
 #header_id li{
     width: 49%;
+}
+#header_id h2{
+    font-size: 40px;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
 }
