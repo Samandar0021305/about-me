@@ -40,13 +40,13 @@ navbarUlElement.classList.add("navbar-list")
 
 
 let headerId = document.getElementById("header_id");
-var headerTextArry = ["I am a software developer and javaScript, C++ developer","../img/20220622_191339.jpg"];
+var headerTextArry = ["My name is Samandar. I am a software developer and javaScript, C++ developer","../img/20220622_191339.jpg"];
 
-for(let i = 0; i<headerTextArry.length;i++){
-    var headerLIEelement = document.createElement("li");
+
+
+var headerLIEelement = document.createElement("li");
+var headerLIEelement1 = document.createElement("li");
     
-}
-
 let headerh2Element = document.createElement("h2");
 let headerImgElement = document.createElement("img");
 
@@ -54,7 +54,8 @@ headerh2Element.textContent = headerTextArry[0];
 headerImgElement.setAttribute("src",headerTextArry[1])
 
 headerLIEelement.appendChild(headerh2Element)
-headerLIEelement.appendChild(headerImgElement)
+headerLIEelement1.appendChild(headerImgElement)
 
 headerId.appendChild(headerLIEelement);
-
+headerId.appendChild(headerLIEelement1);
+headerImgElement.classList.add("header-img")
