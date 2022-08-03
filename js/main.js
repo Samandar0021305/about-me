@@ -9,6 +9,13 @@ var a = 400
 navbarText.style.width = `${a}px`
 navbarText.textContent = "Samandar";
 
+navbarText.addEventListener("mouseenter",()=>{
+    navbarText.setAttribute("data-aos","fade-up")
+    navbarText.setAttribute("data-aos-duration","3000")
+
+})
+
+
 let navbarBox = document.querySelector(".navbar-box")
 let navbarUlElement = document.createElement("ul");
 let navbarListArry = ["Home","About","Contacts"];
