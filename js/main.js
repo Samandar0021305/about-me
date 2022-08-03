@@ -35,4 +35,10 @@ navbarBox.appendChild(navbarUlElement)
 
 navbarUlElement.style.width = "50%";
 navbarUlElement.setAttribute("class","navbar-box")
+navbarUlElement.classList.add("navbar-list")
+
+
+
+let headerId = document.getElementById("header_id");
+
 
