@@ -59,3 +59,10 @@ headerLIEelement1.appendChild(headerImgElement)
 headerId.appendChild(headerLIEelement);
 headerId.appendChild(headerLIEelement1);
 headerImgElement.classList.add("header-img")
+
+
+var me = {
+    name:"Samandar",
+    age:20,
+    job:"software developer"
+}
