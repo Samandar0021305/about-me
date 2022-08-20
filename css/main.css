@@ -6,15 +6,54 @@
 ul,li{
     list-style: none;
 }
+body{
+    font-family: 'DynaPuff', cursive;
+}
 
 a{
     text-decoration: none;
 }
 .wrapper{
     background: #2A2A2A;
+    min-height: 640px;
+    padding: 10px 0;
 }
 
 .container{
     width: 1140px;
     margin: 0 auto;
 }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__list{
+    width: 60%;
+}
+
+.navbar__link{
+    display: flex;
+    width: 100%;
+    color: #E4E4E4;
+    
+}
+.navbar__hover{
+    display: block;
+    width: 0;
+    background-color: orange;
+    height: 1px;
+    transition: width 0.5s ease-in-out ;
+    margin-top: 4px;
+}
+.navbar__link:hover ~ .navbar__hover{
+    width: 100%;
+}
+
+.navbar__toogle{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+}
+
