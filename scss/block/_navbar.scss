@@ -1,0 +1,20 @@
+.navbar{
+    padding: 20px 0;
+    background: #212121;
+   &__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   &__list{
+    width: 400px;
+   }
+   &__list a{
+    text-transform: uppercase;
+   }
+   &__title{
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+   }
+}
