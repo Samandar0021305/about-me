@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 *::after, *::before{
     box-sizing: inherit;
 }
@@ -11,6 +14,9 @@ ul,li{
 }
 a{
 text-decoration: none
+}
+body{
+    font-family: 'Signika', sans-serif;
 }
 @import "./normalize";
 @import "./fonts";
