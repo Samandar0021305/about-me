@@ -1,4 +1,68 @@
 .header{
-    height: calc(100vh - 74.5px);
+    height: calc(100vh - 88.5px);
     background-color: #1D222A;
+
+    &__social{
+        position: fixed;
+        top: 400px;
+        width: 100px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__link{
+            padding: 10px;
+            background-color: rgb(89, 255, 0);
+            display: flex;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+           border-radius: 50%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           transition: background-color 0.5s ease-in-out;
+        }
+        &__link:hover{
+            background-color: #212121;
+        }
+        &__link svg{
+            display: flex;
+            width: 20px;
+            height: 20px;
+            fill: #1D222A;
+        }
+        &__item{
+            margin-top: 20px;
+        }
+    }
+
+
+    &__box{
+        padding-top: 20px;
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+            top: 100px;
+        }
+        &__list h3{
+            color: white;
+            font-weight: 800;
+            font-size: 25px;
+        }
+        &__list h2{
+            margin: 10px 0;
+            font-size: 30px;
+            color: white;
+            font-weight: 800;
+        }
+        &__list p{
+            color: white;
+            font-size: 16px;
+        }
+    }
+
 }

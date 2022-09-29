@@ -3,6 +3,42 @@
     background: #212121;
     position: sticky;
     top: 0;
+    &__subject{
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    &__title ~ span{
+        display: flex;
+        height: 1.5px;
+        margin-top: 5px;
+        width: 0;
+        transition: width 0.6s ease-in-out;
+        background-color: rgb(89, 255, 0);
+        border-radius: 25px;
+        text-align: center;
+    }
+    &__title:hover ~ span{
+        width: 94%;
+
+    }
+    &__title:hover{
+        opacity: 0.6;
+    }
+    &__toogle{
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        display: none;
+    }
+    &__toogle div{
+        width: 40px;
+        margin-top: 7px;
+        height: 2px;
+        border-radius: 15px;
+        background-color: white;
+    }
    &__box{
     display: flex;
     justify-content: space-between;
@@ -22,6 +58,11 @@
     color: white;
     text-transform: uppercase;
     font-size: 18px;
+    font-weight: 700;
+    transition: opacity 0.5s ease-in ;
+   }
+   &__list a:hover{
+    opacity: 0.6;
    }
    &__list a:hover ~ span{
     width: 10px;
@@ -30,7 +71,8 @@
    &__title{
     color: white;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 35px;
+    transition:  opacity 0.5s ease-in;
    }
    &__item span{
     position: absolute;
@@ -44,4 +86,81 @@
    top: -37px;
 
    }
+   &__toogle__bg{
+    position: fixed;
+    z-index: 4;
+    height: 100%;
+    width: 260px;
+    background-color: #46364a;
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+    display: none;
+   }
+   &__close{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 30px;
+      height: 40px;
+      padding: 10px;
+   }
+   &__open{
+    display: flex !important;
+   }
+   &__close div:nth-child(1){
+    height: 2px;
+    width: 40px;
+    background-color: white;
+    // transform: translate(45deg);
+    transform: rotate(45deg);
+   }
+   &__close div:nth-child(2){
+    height: 2px;
+    width: 40px;
+    background-color: white;
+    // transform: translate(45deg);
+    transform: rotate(310deg);
+    position: absolute;
+    z-index: 6;
+
+   }
+   &__toogle__list{
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+   }
+   &__toogle__list a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+   }
+   &__toogle__list li{
+    margin-top: 20px;
+   }
+   &__toogle__list span{
+    height: 2px ;
+    width: 0;
+    display: flex;
+    background-color: rgb(89, 255, 0);
+    transition: width 0.4s ease-in-out;
+    top: 7px !important;
+   }
+   &__toogle__list a:hover ~ span{
+    width: 100%;
+
+   }
+}
+
+@media (max-width:642px){
+ .navbar{
+    &__toogle{
+        display: flex !important;
+    }
+    &__list{
+        display: none !important;
+    }
+ }
 }
