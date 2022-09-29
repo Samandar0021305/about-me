@@ -112,6 +112,15 @@
             &__item{
                 width: 90%;
             }
+            &__item h2{
+                font-size: 25px;
+            }
+            &__item h3{
+                font-size: 23px;
+            }
+            &__item p{
+                font-size: 20px;
+            }
             &__item h2, &__item h3 , &__item p{
                 text-align: center;
             }
@@ -121,6 +130,6 @@
 
 @media (max-width:400px){
     .header{
-        height: 80vh;
+        height: 70vh;
     }
 }
