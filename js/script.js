@@ -18,3 +18,6 @@ navbar__close.addEventListener("click",()=>{
 header.addEventListener("click",()=>{
     navbar__toogle__bg.classList.remove("navbar__open")
 })
+
+let navbar = document.querySelector(".navbar");
+

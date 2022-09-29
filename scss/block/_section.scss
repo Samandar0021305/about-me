@@ -1,0 +1,10 @@
+.section{
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    height: 100vh;
+    padding-top: 30px;
+    &__subject{
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+}
